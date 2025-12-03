@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Guess the School Object! — Interactive Game</title>
+<style>
+  /* (styles unchanged) */
+</style>
+</head>
+<body>
+<div class="app" role="application" aria-label="Guess the School Object game">
+  <header>
+    <div>
+      <h1>Guess the School Object!</h1>
+      <div class="meta small">Interactive vocabulary game — Theme: School Objects</div>
+    </div>
+    <div class="meta">
+      <div id="progress">Question <strong>1</strong>/<span id="total">8</span></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <div class="stage" aria-live="polite">
+        <div class="object-art" id="art" aria-hidden="true">✏️</div>
+        <div class="prompt">What is this?</div>
+
+        <div class="options" id="options" role="list">
+        </div>
+
+        <div style="width:100%; margin-top:12px;">
+          <div id="explain" class="small" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="side">
+      <div class="card score">
+        <h3 id="score">0</h3>
+        <p>Score</p>
+      </div>
+
+      <div class="card status">
+        <div>
+          <div class="small">Streak</div>
+          <div id="streak" style="font-weight:700">0</div>
+        </div>
+        <div>
+          <div class="small">Correct</div>
+          <div id="correctCount" style="font-weight:700">0</div>
+        </div>
+        <div>
+          <div class="small">Wrong</div>
+          <div id="wrongCount" style="font-weight:700">0</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="small">How to play</div>
+        <p style="margin:8px 0 0 0;">Tap the correct answer. Correct answer gives +10 points. Try to get a streak!</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div id="feedback" class="feedback" aria-live="polite">Good luck! 🍀</div>
+    <div class="small">Made for classroom — English only</div>
+  </footer>
+</div>
+
+<script>
+/* (JS unchanged—only text changed on prompt line) */
+</script>
+</body>
+</html>
